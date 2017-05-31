@@ -1,0 +1,310 @@
+html {
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: white;
+}
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+   opacity: 0.7;
+}
+.nav-link {
+  color: white;
+}
+.carousel-item {
+  height: 100%;
+  width: 100%;
+}
+.carousel {
+  position: relative;
+  top: -100px;
+  z-index: -1;
+  width: 100%;
+  max-height: 100%;
+  background-color: black;
+}
+
+.about{
+  background-color: white;
+  margin-bottom: 50px;
+}
+.thumbnail {
+  width: 100%;
+  height: 100%;
+}
+
+.black {
+  position: absolute;
+  top: 0;
+  background-color: black;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  display: none;
+  overflow: hidden;
+}
+.thumbnail-container {
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 220px;
+  position: relative;
+  height: 220px;
+  width: 330px;
+}
+.thumbnail-text {
+  margin-top: 30px;
+}
+
+@media(max-width: 1200px){
+  .thumbnail-container {
+    width: 100%;
+  }
+  .thumbnail {
+    width: 100%;
+  }
+}
+@media(max-width: 991px){
+  .thumbnail-container {
+    height: 160px;
+    line-height: 160px;
+  }
+}
+@media(max-width: 767px){
+  .thumbnail-container {
+    height: 300px;
+    line-height: 300px;
+  }
+}
+.fullWidthContainer {
+  width: 100%;
+  position: relative;
+  margin-bottom: 70px;
+}
+.fullWidthContainer_2 {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.fullSizeImage {
+  width: 100%;
+}
+.red {
+  background-color: #19A6AF;
+}
+
+.textInBlueContaier {
+  color: white;
+  position: relative;
+  top: 100px;
+  font-size: 1.5em;
+  left: 0;
+
+}
+.recentWorks {
+  text-align: center;
+}
+.recentWorks a {
+  color: #585858;
+}
+.recentWorks a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+.grid {
+  background-color: black;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.noPaddingOfColumn {
+  padding-left: 0;
+  padding-right: 0;
+}
+.fullHeightImage {
+  height: 100%;
+}
+.grid-item {
+  height: 100%;
+  color : white;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100%;
+}
+.footer-2 {
+  margin: 0;
+  padding: 0;
+  background-color: #242424;
+  color: white;
+  position: relative;
+  /*top: -70px;*/
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-bottom: 0;
+}
+.footer {
+  background-color: black;
+  height: 100px;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 25px;
+  color: #D5D5D5;
+}
+.logo {
+  height: 30px;
+}
+body{
+  padding-bottom: 0;
+}
+.coverImage{
+  width: 100%;
+  position: relative;
+  top: -100px;
+  z-index: -1;
+  height: 100vh;
+}
+.coverImageItem {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+.coverBackground {
+  position: relative;
+  top: -62px;
+}
+
+.textInImage {
+  position: absolute;
+  top: 200px;
+  text-align: center;
+  color: white;
+  width: 80%;
+  left: 10%;
+  font-size: 1.5em;
+  display: none;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+h1 {
+  font-family: 'Josefin Slab', serif;
+  font-size: 3.5em;
+  font-weight: 700;
+}
+#para1 {
+
+  font-weight: 400;
+  font-size: 1.7em;
+}
+
+#para2{
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+@media (max-width: 1091px) {
+  .coverImage{
+    width: 100%;
+    position: relative;
+    top: -100px;
+    z-index: -1;
+    height: 90vh;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+  #para1 {
+    font-size: 1.2em;
+  }
+  #para2{
+    font-size: 0.8em;
+  }
+  .textInImage {
+    top: 150px;
+    font-size: 1em;
+  }
+  .textInBlueContaier {
+    text-align: center;
+    left: 0;
+    top: 30px;
+    font-size: 1.1em;
+
+  }
+}
+
+@media (max-width: 891px) {
+  .coverImage{
+    width: 100%;
+    position: relative;
+    top: -100px;
+    z-index: -1;
+    height: 80vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .textInBlueContaier {
+    height: 300px;
+  }
+}
+
+@media (max-width: 691px) {
+  .coverImage{
+    width: 100%;
+    position: relative;
+    top: -100px;
+    z-index: -1;
+    height: 60vh;
+  }
+  .textInImage {
+    position: absolute;
+    top: 70px;
+    text-align: center;
+    color: white;
+    width: 80%;
+    left: 10%;
+    font-size: 0.8em;
+    display: none;
+  }
+  .textInBlueContaier {
+    top: 50px;
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 575px) {
+  .textInBlueContaier {
+    width: 80%;
+    left: 10%;
+  }
+}
+@media (max-width: 491px) {
+  .coverImage{
+    width: 100%;
+    position: relative;
+    top: -100px;
+    z-index: -1;
+    height: 50vh;
+  }
+  .textInImage {
+    position: absolute;
+    top: 50px;
+    text-align: center;
+    color: white;
+    width: 80%;
+    left: 10%;
+    font-size: 0.7em;
+    display: none;
+  }
+
+  /*.textInBlueContaier {
+    font-size: 0.7em;
+  }*/
+}
