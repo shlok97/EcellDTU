@@ -319,7 +319,7 @@
     <script type="text/javascript">
 
       // A function to show a dark overlay on an image when it is hovered
-      $(".itemContainer").hover(function(){
+      $(".itemContainer, .thumbnail-container").hover(function(){
 
         $(this).children('.black').fadeIn();
 
@@ -343,13 +343,7 @@
         }
       });
 
-
-      $('.thumbnail-container').hover(function(){
-        $(this).children('.black').fadeIn();
-      }, function(){
-        $(this).children('.black').fadeOut();
-      });
-
+      // a funtion to animate the text when it appears on the screen
       $(window).scroll(function(event) {
         if($(".fullWidthContainer").offset().top + 250 < $(window).scrollTop() + $(window).outerHeight()) {
           $(".fullWidthContainer").children('.textInImage').fadeIn('slow');
@@ -393,7 +387,7 @@
         setTimeout(function() {myLoop(i);}, delay);
 
       }
-
+      // This function calls the myLoop function when the page loads
       $(document).ready(function() {
         var count = 0;
         myLoop(0);
